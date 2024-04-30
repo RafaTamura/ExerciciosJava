@@ -7,5 +7,5 @@ import lombok.Setter;
 
 public class Moeda {
     private double cotacao;
-    private double valor;
+    private double dolar;
 }
