@@ -1,10 +1,10 @@
 package com.pessoalrafa.conversor;
+import com.pessoalrafa.model.Moeda;
 // 1. Crie uma classe `ConversorMoeda` que implementa uma interface `ConversaoFinanceira` com o 
 // método converterDolarParaReal() para converter um valor em dólar para reais.
-
-import com.pessoalrafa.model.Moeda;
-
 //  A classe deve receber o valor em dólar como parâmetro.
+
+
 
 public class ConversorMoeda{
     public String converterDolarParaReal() {
