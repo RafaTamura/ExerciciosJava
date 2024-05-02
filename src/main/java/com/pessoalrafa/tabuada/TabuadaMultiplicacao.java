@@ -8,6 +8,7 @@ import com.pessoalrafa.interfaces.Tabuada;
 
 //  A classe deve receber o número como parâmetro.
 public class TabuadaMultiplicacao implements Tabuada{
+    @Override
   public int mostrarTabuada(){
     Scanner input = new Scanner(System.in);
     System.out.println("Digite o número para exibir a tabuada: ");
@@ -15,7 +16,7 @@ public class TabuadaMultiplicacao implements Tabuada{
 
     return numero;
   } 
-
+@Override
   public String Calculo() {
     TabuadaMultiplicacao tabuada = new TabuadaMultiplicacao();
     int numero = tabuada.mostrarTabuada();
