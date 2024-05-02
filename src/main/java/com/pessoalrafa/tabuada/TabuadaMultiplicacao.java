@@ -4,8 +4,10 @@ package com.pessoalrafa.tabuada;
 
 import java.util.Scanner;
 
+import com.pessoalrafa.interfaces.Tabuada;
+
 //  A classe deve receber o número como parâmetro.
-public class TabuadaMultiplicacao {
+public class TabuadaMultiplicacao implements Tabuada{
   public int mostrarTabuada(){
     Scanner input = new Scanner(System.in);
     System.out.println("Digite o número para exibir a tabuada: ");

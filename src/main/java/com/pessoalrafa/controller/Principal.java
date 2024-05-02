@@ -4,6 +4,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.pessoalrafa.calculararea.CalculadoraSalaRetangular;
 import com.pessoalrafa.conversor.ConversorMoeda;
+import com.pessoalrafa.interfaces.Tabuada;
 import com.pessoalrafa.tabuada.TabuadaMultiplicacao;
 
 
@@ -25,14 +26,8 @@ public class Principal{
 
 @GetMapping("/tabuada")
 public String TabuadaMultiplicacao(){
-    TabuadaMultiplicacao tabuada = new TabuadaMultiplicacao();
+    Tabuada tabuada = new TabuadaMultiplicacao();
     return tabuada.Calculo();
-    // int numero = tabuada.mostrarTabuada();
-    // String resultado = "";
-    // for (int i = 1; i <= 10; i++) {
-        // resultado += numero + " x " + i + " = " + numero * i + "<br>";
-    // }
-    // return resultado;
 
 }
 
